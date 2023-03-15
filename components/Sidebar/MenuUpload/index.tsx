@@ -2,7 +2,6 @@ import React from "react";
 import { useState, FC } from "react";
 import { UploadObjects } from "./uploadObjects";
 import { UploadPlaces } from "./uploadPlaces";
-import AddIcon from "@mui/icons-material/AddRounded";
 
 export default function MenuUpload() {
   const [openPlace, setOpenPlace] = useState(false);

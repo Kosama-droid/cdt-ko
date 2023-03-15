@@ -7,7 +7,7 @@ export default function Logo() {
       title="Imagine Canada's Digital Twin"
       className="icon"
     >
-      <Image priority src="/icdt-logo.png" height={55} width={55} alt="" />
+      <Image priority src="/icdt-logo.png" height={50} width={50} alt="" />
     </div>
   );
 }
