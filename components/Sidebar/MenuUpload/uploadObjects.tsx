@@ -1,6 +1,5 @@
 import { useState, FC } from "react";
 import AddIcon from "@mui/icons-material/AddRounded";
-import { MenuButton } from "./menu-button";
 
 interface Props {
   toggleOsm: (arg: boolean) => void;
