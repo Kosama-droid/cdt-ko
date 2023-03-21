@@ -2,6 +2,7 @@ import React from "react";
 import { useState, FC } from "react";
 import { UploadObjects } from "./uploadObjects";
 import { UploadPlaces } from "./uploadPlaces";
+import { DragDropFile } from "./dragDrop";
 
 export default function MenuUpload() {
   const [openPlace, setOpenPlace] = useState(false);
@@ -24,14 +25,19 @@ export default function MenuUpload() {
   };
 
   return (
-    <React.Fragment>
+    <>
       <div id="upload-container" title="Upload" className="right-menu-body">
         <button onClick={handleClickPlace}>Places</button>
         {openPlace && <UploadPlaces />}
 
         <button onClick={handleClickObjects}>Objects</button>
         {openObject && <UploadObjects />}
+
+        <span id="dragDrop-container" title="DragDrop" className="right-menu-body">
+          <DragDropFile></DragDropFile>
+        </span>
       </div>
-    </React.Fragment>
+
+    </>
   );
 }
